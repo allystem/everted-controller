@@ -57,14 +57,14 @@ int getPulseRate(){
   else if (angle > upperBuffer){
     input = true;
     pulseRate = (int)((double(angle-(upperBuffer + 1)) / (maxAngle - upperBuffer - 1)) * (maxPulseRate - minPulseRate)) + minPulseRate;
+    digitalWrite(directionPin, HIGH); //set spinning clockwise
     return pulseRate;
-    //digitalWrite(directionPin, HIGH);
   }
   else{
     input = true;
     pulseRate = (int)((double(angle-(lowerBuffer - 1)) / (minAngle - lowerBuffer + 1)) * (maxPulseRate - minPulseRate)) + minPulseRate;
+    digitalWrite(directionPin, LOW); //set spinning counterclockwise
     return pulseRate;
-    //digitalWrite(directionPin, LOW);
   }
 }
 
