@@ -1,6 +1,4 @@
 # everted-controller
-DEMO- https://drive.google.com/file/d/1SERXIzHDEP-tcdS4xoWxEkYefPgyYTUN/view?usp=sharing change video quality to 1080
-
 STEPS
 - Collect the following parts
     - NEMA 17 Stepper Motor
@@ -16,6 +14,7 @@ STEPS
 - Finish wiring everything using stepper-schematic.png. If you have it, in addition to the capacitor use a reversed diode across the 12V power supply.
 - Download and run the stepper_joystick0.ino code on your IDE
 
+DEMO- https://drive.google.com/file/d/1UV_EmlYT9lENsPUhlBijEXtnWL5Smxsb/view?usp=drivesdk change video quality to 1080
 
 Steps to get the DC controller running
  - coming
